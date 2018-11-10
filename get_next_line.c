@@ -6,7 +6,7 @@
 /*   By: hahmed <hahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/31 15:50:20 by hahmed            #+#    #+#             */
-/*   Updated: 2018/11/09 19:40:19 by hahmed           ###   ########.fr       */
+/*   Updated: 2018/11/09 19:59:18 by hahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static t_file	*get_fd(t_file **head, int fd)
 			return (elem);
 		elem = elem->next;
 	}
-	elem = (t_file *)ft_lstnew("", 1);
+	elem = (t_file*)ft_lstnew("", 1);
 	elem->fd = fd;
 	elem->next = *head;
 	*head = elem;
